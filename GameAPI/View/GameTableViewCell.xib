@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="KGk-i7-Jjw" customClass="GameTableViewCell" customModule="GameAPI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty" translatesAutoresizingMaskIntoConstraints="NO" id="olI-sb-JDz">
+                        <rect key="frame" x="10" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="Hsv-dL-6bp"/>
+                            <constraint firstAttribute="height" constant="80" id="phj-hZ-0nf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama Game" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fp9-zK-Usr">
+                        <rect key="frame" x="105" y="10" width="299" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17-02-2012" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJ2-jM-B2S">
+                        <rect key="frame" x="105" y="36" width="299" height="15"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★★★★" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbD-8q-n8g">
+                        <rect key="frame" x="142" y="58" width="60" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.62" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWf-k1-Ilj">
+                        <rect key="frame" x="105" y="59" width="32" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gWf-k1-Ilj" firstAttribute="leading" secondItem="olI-sb-JDz" secondAttribute="trailing" constant="15" id="20S-OV-4pl"/>
+                    <constraint firstItem="iJ2-jM-B2S" firstAttribute="leading" secondItem="olI-sb-JDz" secondAttribute="trailing" constant="15" id="2SH-fF-BeO"/>
+                    <constraint firstItem="iJ2-jM-B2S" firstAttribute="top" secondItem="Fp9-zK-Usr" secondAttribute="bottom" constant="2" id="6c6-sb-BgN"/>
+                    <constraint firstItem="olI-sb-JDz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Gh1-3c-1hR"/>
+                    <constraint firstAttribute="bottom" secondItem="olI-sb-JDz" secondAttribute="bottom" constant="10" id="JgR-mP-VtU"/>
+                    <constraint firstItem="olI-sb-JDz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="L9P-CB-ddZ"/>
+                    <constraint firstItem="gWf-k1-Ilj" firstAttribute="top" secondItem="iJ2-jM-B2S" secondAttribute="bottom" constant="8" id="aEw-6U-hTr"/>
+                    <constraint firstAttribute="trailing" secondItem="iJ2-jM-B2S" secondAttribute="trailing" constant="10" id="g4w-fz-nym"/>
+                    <constraint firstItem="Fp9-zK-Usr" firstAttribute="leading" secondItem="olI-sb-JDz" secondAttribute="trailing" constant="15" id="lDc-Qp-ejd"/>
+                    <constraint firstItem="Fp9-zK-Usr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="sGN-Sp-02z"/>
+                    <constraint firstItem="bbD-8q-n8g" firstAttribute="leading" secondItem="gWf-k1-Ilj" secondAttribute="trailing" constant="5" id="ujc-jU-8ry"/>
+                    <constraint firstItem="bbD-8q-n8g" firstAttribute="top" secondItem="iJ2-jM-B2S" secondAttribute="bottom" constant="7" id="wCb-k7-4Ku"/>
+                    <constraint firstAttribute="trailing" secondItem="Fp9-zK-Usr" secondAttribute="trailing" constant="10" id="zXZ-48-VKT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameGame" destination="Fp9-zK-Usr" id="q8a-NF-XbW"/>
+                <outlet property="photoGame" destination="olI-sb-JDz" id="0Aa-gg-Fu5"/>
+                <outlet property="ratingGame" destination="gWf-k1-Ilj" id="Atk-FX-JVF"/>
+                <outlet property="ratingTop" destination="bbD-8q-n8g" id="bPp-Fq-DJ2"/>
+                <outlet property="releasedGame" destination="iJ2-jM-B2S" id="k8M-sa-po1"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="124.55357142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="empty" width="250" height="200"/>
+    </resources>
+</document>
